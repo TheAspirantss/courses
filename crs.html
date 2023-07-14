@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Courses</title>
+  <link rel="shortcut icon" type="image/png" href="asp_v_om.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="courses.css" />
+  <link rel="stylesheet" href="courses_card.css" />
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="footer.css">
+  <!-- <script src="loading.js"></script> -->
+</head>
+
+<body>
+  <div id="loader">
+    <div class="loader-logo"></div>
+  </div>
+
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="asp_wide_crs.png" alt="Logo" /></a>
+    </div>
+    <div class="nav-links">
+      <!-- Add your navigation links here -->
+      <a href="index.html">Home</a>
+      <a href="crs.html">Courses</a>
+      <a href="about.html">About</a>
+      <!-- <a href="ctc.html">Contact</a> -->
+      <a href="cart.html"><img src="cart-2.png" id="cart-icon"></a><span id="cart-count"></span></a>
+    </div>
+  </div>
+  <!-- Filter section -->
+  <div id="filter-container">
+    <!-- <h3 id="fl">Filter</h3> -->
+    <label for="price-filter">Price:</label>
+    <select id="price-filter" onchange="filterCards()"
+      class="selectpicker col-sm-1.5 border-0  px-1 py-1 rounded shadow" data-width="auto">
+      <option value="all">All</option>
+      <option value="free">Free</option>
+      <option value="paid">Paid</option>
+    </select>
+
+    <label for="platform-filter">Platform:</label>
+    <select id="platform-filter" onchange="filterCards()"
+      class="selectpicker col-sm-1.5 border-0  px-1 py-1 rounded shadow" data-width="auto">
+      <option value="all">All</option>
+      <option value="Udemy">Udemy</option>
+      <option value="GeeksforGeeks">GeeksForGeeks</option>
+      <option value="Coursera">Coursera</option>
+      <option value="Youtube">Youtube</option>
+      <option value="GreatLearning">GreatLearning</option>
+      <option value="CodingNinjas">Coding Ninjas</option>
+      <option value="NPTEL">NPTEL</option>
+
+    </select>
+
+    <label for="tags-filter">Topic:</label>
+    <select id="tags-filter" onchange="filterCards()" class="selectpicker col-sm-1.5 border-0  px-1 py-1 rounded shadow"
+      data-width="auto">
+      <option value="all">All</option>
+      <option value="Data Structure and Algorithm">DSA</option>
+      <option value="Development">Development</option>
+      <option value="OOPS">OOPS</option>
+      <option value="Computer Network">Computer Network</option>
+      <option value="Machine Learning">Machine Learning</option>
+      <option value="DBMS">DBMS</option>
+      <option value="Blockchain">Blockchain</option>
+      <option value="Operating System">Operating Systems</option>
+      <option value="Robotics">Robotics</option>
+      <option value="Miscellaneous">Miscellaneous</option>
+      <option value="Cyber Securit">Cyber Security</option>
+      <option value="C/C++">C/C++</option>
+    </select>
+    <div class="search-container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form">
+            <i class="fa fa-search "></i>
+            <input type="text" class="form-control form-input shadow " placeholder="Search anything..."
+              oninput="searchCards()" id="searchBar">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button onclick="moveToTop()" id="movetop" title="Go to top">↑</button>
+    <!-- <a href="cart.html">CART</a> -->
+  </div>
+
+  <div id="cards-container"></div>
+
+  <div class="nc">
+    <img src="" id="nocourses" />
+  </div>
+  <div id="compare-container"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <h2>Aspirants</h2>
+      </div>
+      <div class="footer-links">
+        <a href="index.index.html">Home</a>
+        <a href="crs.html">Courses</a>
+        <a href="about.html">About</a>
+        <!-- <a href="ctc.html">Contact</a> -->
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Aspirants. All rights reserved.</p>
+      <br>
+      <hr>
+      <div class="disclaimer">
+        <p class="d1">For queries/feedback mail us at: <b><a
+              href="mailto:theaspirants1@gmail.com">theaspirants1@gmail.com</a></b>
+        </p>
+        <!-- <br> -->
+        <p class="d2">
+          For better experiance use PC/LAPTOP.
+        </p>
+        <!-- <br> -->
+        <p class="d3">
+          <b>Courses Version:1.0</b>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="loading.js"></script>
+  <script src="script.js"></script>
+
+  <!-- <script src="loading.js"></script> -->
+  <script src="script_compare.js"></script>
+  <script src="cart.js"></script>
+
+  <script>
+    let mybutton = document.getElementById("movetop");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 500 ||
+        document.documentElement.scrollTop > 500
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function moveToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  </script>
+</body>
+
+</html>

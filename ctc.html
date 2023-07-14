@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="cart.css">
+
+
+</head>
+
+<body class="conta">
+  <div id="loader">
+    <div class="loader-logo"></div>
+  </div>
+  <div class="navbar">
+    <div class="logo">
+      <img src="asp_wide_crs.png" alt="Logo">
+    </div>
+    <div class="nav-links">
+      <!-- Add your navigation links here -->
+      <a href="index.html">Home</a>
+      <a href="crs.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="ctc.html">Contact</a>
+      <a href="cart.html"><img src="cart-2.png" id="cart-icon"></a><span id="cart-count"></span></a>
+    </div>
+  </div>
+  <div class="container_new">
+    <div class="content">
+      <div class="image-box img-1">
+        <img class="img-2" src="contact_new.png" alt="" />
+      </div>
+      <form action="#">
+        <div class="topic">Send us a message</div>
+        <div class="input-box">
+          <input id="yrn" type="text" required />
+          <label>Enter your name</label>
+        </div>
+        <div class="input-box">
+          <input onclick="valid_function()" id="yre" type="email" required />
+          <label>Enter your email</label>
+        </div>
+        <div class="message-box">
+          <textarea id="yrt" required></textarea>
+          <label>Enter your message</label>
+        </div>
+        <div class="input-box">
+          <input class="btn_new" type="submit" value="Send Message" onclick="btn_function()" />
+          <script>
+            function btn_function() {
+              var in1 = document.getElementById('yrn');
+              var in2 = document.getElementById('yre');
+              var in3 = document.getElementById('yrt');
+              if (in1.value.trim() !== '' && in2.value.trim() !== '' && in3.value.trim() !== '') {
+                window.location.href =
+                  "mailto:theaspirants1@gmail.com"
+              }
+              
+            }
+          </script>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- footer section -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <h2>Aspirants</h2>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="crs.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="ctc.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Aspirants. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- <script src="script.js"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- the position of this jquery scipt always before the index.js script.. -->
+  <script src="new.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+  <script src="loading.js"></script>
+  <script src="cart.js"></script>
+</body>
+
+</html>
