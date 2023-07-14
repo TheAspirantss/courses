@@ -1,0 +1,26 @@
+footer{
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+.disclaimer{
+  position: relative;
+}
+.disclaimer a{
+  text-decoration: none;
+  color:#000000
+}
+.d1{
+  font-size: 15px;
+}
+.d2{
+  font-size: 11px;
+  /* text-align: left; */
+}
+.d3{
+  font-size: 11px;
+}
+b{
+  text-decoration: none;
+  color:white
+}
