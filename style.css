@@ -118,7 +118,7 @@ yellow #F08519
 }
 
 .card-bg.geeksforgeeks {
-  background-image: url('../list/gfg.png');
+  background-image: url('gfg.png');
   height: 20px;
   width: 40px;
   align-self: center;
@@ -127,7 +127,7 @@ yellow #F08519
 }
 
 .card-bg.udemy {
-  background-image: url('../list/udemy.png');
+  background-image: url('udemy.png');
   height: 34px;
   width: 90px;
   position: relative;
@@ -135,7 +135,7 @@ yellow #F08519
 
 .card-bg.coursera {
   position: relative;
-  background-image: url('../list/coursera.png');
+  background-image: url('coursera.png');
   height: 13px;
   width: 95px;
 }
@@ -143,21 +143,21 @@ yellow #F08519
 
 .card-bg.alison {
   position: relative;
-  background-image: url('../list/alison.svg');
+  background-image: url('alison.svg');
   height: 33px;
   width: 97px;
 }
 
 .card-bg.youtube {
   position: relative;
-  background-image: url('../list/youtube.png');
+  background-image: url('youtube.png');
   height: 25px;
   width: 92px;
 }
 
 .card-bg.domestika {
   position: relative;
-  background-image: url('../list/domestika.png');
+  background-image: url('domestika.png');
   height: 18px;
   width: 95px;
 }
@@ -255,7 +255,7 @@ a {
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
-    background-image: url('../list/Courses_animation.gif');
+    background-image: url('Courses_animation.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
