@@ -66,7 +66,7 @@ body {
   box-shadow: 0 5px 10px black;
   background-position: right bottom;
   transform: scale(1.05);
-  cursor: url(../list/asp-v-99cur.cur), auto;
+  cursor: url(asp-v-99cur.cur), auto;
 }
 .course-image {
   width: 100%;
