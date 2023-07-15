@@ -54,7 +54,7 @@ body {
   box-shadow: 0 5px 10px black;
   background-position: right bottom;
   transform: scale(1.05);
-  cursor: url(../list/asp-v-99cur.cur), auto;
+  cursor: url(asp-v-99cur.cur), auto;
 }
 
 @media (max-width: 1024px) {
@@ -106,14 +106,14 @@ body {
 }
 
 .card-bg.geeksforgeeks {
-  background-image: url('../list/gfg.png');
+  background-image: url('gfg.png');
   height: 20px;
   width: 40px;
   position: relative;
 }
 
 .card-bg.udemy {
-  background-image: url('../list/udemy.png');
+  background-image: url('udemy.png');
   height: 26px;
   width: 69px;
   position: relative;
@@ -121,7 +121,7 @@ body {
 
 .card-bg.coursera {
   position: relative;
-  background-image: url('../list/coursera.png');
+  background-image: url('coursera.png');
   height: 13px;
   width: 95px;
 }
@@ -129,42 +129,42 @@ body {
 
 .card-bg.alison {
   position: relative;
-  background-image: url('../list/alison.svg');
+  background-image: url('alison.svg');
   height: 33px;
   width: 97px;
 }
 
 .card-bg.youtube {
   position: relative;
-  background-image: url('../list/youtube.png');
+  background-image: url('youtube.png');
   height: 25px;
   width: 92px;
 }
 
 .card-bg.domestika {
   position: relative;
-  background-image: url('../list/domestika.png');
+  background-image: url('domestika.png');
   height: 18px;
   width: 95px;
 }
 
 .card-bg.greatlearning {
   position: relative;
-  background-image: url('../list/greatlearning.png');
+  background-image: url('greatlearning.png');
   height: 25px;
   width: 95px;
 }
 
 .card-bg.nptel {
   position: relative;
-  background-image: url('../list/npetl.png');
+  background-image: url('npetl.png');
   height: 18px;
   width: 95px;
 }
 
 .card-bg.codingninjas {
   position: relative;
-  background-image: url('../list/codingninja.png');
+  background-image: url('codingninja.png');
   height: 40px;
   width: 95px;
 }
@@ -245,7 +245,7 @@ body {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../list/star-removebg-preview.png');
+  background-image: url('star-removebg-preview.png');
   /* Replace with the path to your star icon image */
   background-size: cover;
   margin-right: 2px;
